@@ -3,6 +3,9 @@ package com.ashokslsk.blockchain;
 public class BlockApp {
     public static void main(String[] args) {
         System.out.println(SHA256Helper.hash("Ashok Kumar Srinivas"));
+
+        //Double Hashing
+        System.out.println(SHA256Helper.hash(SHA256Helper.hash("Ashok Kumar Srinivas")));
     }
 }
 
